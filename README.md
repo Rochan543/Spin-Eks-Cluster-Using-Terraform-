@@ -23,3 +23,9 @@ This repository contains the Terraform configuration files to deploy an Amazon E
 1. Initialize Terraform:
    ```bash
    terraform init
+2. To preview the changes Terraform will make to your infrastructure without applying them.
+   ```bash
+   terraform plan
+3. To apply the changes specified in your Terraform configuration files and execute the plan.
+   ```bash
+   terraform apply
