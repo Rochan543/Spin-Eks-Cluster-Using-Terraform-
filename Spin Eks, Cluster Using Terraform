@@ -1,0 +1,30 @@
+## Real-Time Walkthrough to Create the Kubernetes Cluster Using Terraform Script 
+This documentation provides a step-by-step guide to creating an Amazon Elastic Kubernetes Service (EKS) cluster using Terraform, with a focus on addressing the omission of the IAM user. The steps include an explanation of the Terraform script and necessary modifications 
+
+## Prerequisites  
+Required Tools: 
+• Terraform installed on your local system. 
+• AWS CLI configured with your credentials.
+
+1. Folder Structure 
+project-root/ 
+├── main.tf       
+     # Core Terraform configuration 
+├── variables.tf       # Input variable definitions 
+├── outputs.tf       
+  # Output definitions 
+└── README.md          # Documentation
+
+
+Step1: Create an IAM User. Give the Administration Access to that User
+Step2: Go to the User which you created. Generate the Access key and secret key for that User
+Step3: launch the Instance.
+step4: configure your aws 
+          # aws configure
+step5: install Terraform in your instance
+         # sudo yum install -y yum-utils shadow-utils
+         # sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
+         # sudo yum -y install terraform
+
+         #terraform init
+
